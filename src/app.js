@@ -11,18 +11,18 @@ import './styles/styles.scss';
 
 const store = configureStore();
 
-store.dispatch(addExpense({ description: 'Water Bill', amount: 100, createdAt: 1000  }));
-store.dispatch(addExpense({ description: 'Gas Bill', amount: 300, createdAt: 9992000 }));
-store.dispatch(addExpense({ description: 'Rent Bill', amount: 543534, createdAt: 104300  }));
-store.dispatch(setTextFilter(''));
+// store.dispatch(addExpense({ description: 'Water Bill', amount: 100, createdAt: 1000  }));
+// store.dispatch(addExpense({ description: 'Gas Bill', amount: 300, createdAt: 9992000 }));
+// store.dispatch(addExpense({ description: 'Rent Bill', amount: 543534, createdAt: 104300  }));
+// store.dispatch(setTextFilter(''));
 
-setTimeout(() => {
-    store.dispatch(setTextFilter(''));
-}, 3000)
+// setTimeout(() => {
+//     store.dispatch(setTextFilter(''));
+// }, 3000)
 
-const state = store.getState();
-const visbibleExpenses = getVisibleExpenses(state.expenses, state.filters);
-console.log(visbibleExpenses);
+// const state = store.getState();
+// const visbibleExpenses = getVisibleExpenses(state.expenses, state.filters);
+// console.log(visbibleExpenses);
 
 // store.subscribe(() => {
 //     const state = store.getState();
