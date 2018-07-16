@@ -3,9 +3,11 @@ import { BrowserRouter, Route, Switch, Link, NavLink } from 'react-router-dom';
 import ExpenseList from './ExpenseList';
 import ExpenseListItem from './ExpenseListItem';
 import ExpenseListFilters from './ExpenseListFilters';
+import ExpensesSummary from './ExpensesSummary';
 
 const ExpenseDashboardPage = () => (
     <div>
+        <ExpensesSummary />
         <ExpenseListFilters />
         <ExpenseList />
     </div>
