@@ -41,12 +41,35 @@ export const editExpense = (id, updates) => ({
     updates
 });
 
+export const startEditExpense = (id, updates) => {
+    return (dispatch) => {
+        return database.ref(`expenses/${id}`).update(updates).then(() => {
+            dispatch(editExpense({id, updates}));
+        });
+    };
+};
 
 // SET_EXPENSES
 export const setExpenses = (expenses) => ({
     type: 'SET_EXPENSES',
     expenses
 });
+
+export const startRemoveExpense = ({id}) => {
+    // const expenseId = `expenses/${id.id}`
+    return (dispatch) => {
+        return database.ref(`expenses/${id}`)
+            .remove()
+            .then(() => {
+                dispatch(removeExpense({
+                 id
+            }))
+        })
+        .catch((e) => {
+            console.log('Error deleting Data', e);
+        })
+    }
+};
 
 export const startSetExpenses = () => {
     return (dispatch) => {
