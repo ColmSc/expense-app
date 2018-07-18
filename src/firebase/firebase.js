@@ -3,7 +3,8 @@ import * as firebase from 'firebase';
 
   const config = {
     apiKey: "AIzaSyDw5F39yP35I41QKtW8pslMQGnfx3c3kVw",
-    authDomain: "expense-app-3cfd2.firebaseapp.com",
+    //authDomain: "expense-app-3cfd2.firebaseapp.com",
+    authDomain: " react-expense-cs.herokuapp.com ",
     databaseURL: "https://expense-app-3cfd2.firebaseio.com",
     projectId: "expense-app-3cfd2",
     storageBucket: "expense-app-3cfd2.appspot.com",
