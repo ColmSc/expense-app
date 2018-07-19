@@ -1,10 +1,13 @@
-.big-button {
+.button {
     background: $light-blue;
     border: none;
     border-bottom: 0;
     color: white;
+    display: inline-block;
     font-size: $font-size-large;
+    line-height: 1;
     padding: $s-size;
+    text-decoration: none;
 
 }
 
@@ -13,13 +16,17 @@
 }
 
 //Button
-.button {
-    background: $light-blue;
-    border: none;
-    border-bottom: .3rem solid darken($light-blue, 10%);
-    color: white;
-    font-weight: 500;
-    padding: $s-size;
+//.button {
+ //   background: $light-blue;
+ //   border: none;
+ //   border-bottom: .3rem solid darken($light-blue, 10%);
+ //   color: white;
+ //   font-weight: 500;
+ //   padding: $s-size;
+//}
+
+.button--seconary {
+    background: #888
 }
 
 .button--link {
