@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 console.log(path.join(__dirname, 'public'));
@@ -9,7 +10,7 @@ module.exports = (env) => {
 
     console.log('env', env);
     return {
-        entry: ['babel-polyfill','./src/app.js'],
+        entry: ['babel-polyfill', './src/app.js'],
         output: {
             path: path.join(__dirname, 'public', 'dist'),
             filename: 'bundle.js'
